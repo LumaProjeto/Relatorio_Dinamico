@@ -99,7 +99,7 @@ if df_mae is not None:
                                 if valores_selecionados:
                                     df_filtrado = df_filtrado[df_filtrado[col_filtro].isin(valores_selecionados)]
 
-                        # Após aplicar todos os filtros, segue a agregação
+                        # segue a agregação
                         if col_chave in df_filtrado.columns and col_ops:
                             def agg_func(x):
                                 result = {}
